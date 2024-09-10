@@ -1,0 +1,15 @@
+fib of 50
+Time: 76.732293
+Result: -298632863
+
+fibSkip of 50
+Time: 47.612818
+Result: -298632863
+
+fibMemo of 50
+Time: 0.000001
+Result: -298632863
+
+fibMemo3 of 50
+Time: 0.000000
+Result: -298632863
