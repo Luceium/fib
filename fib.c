@@ -7,7 +7,7 @@
 // fibSkip is a solution I came up with before learning DP. I want to see how significant
 // the improvement is over recursiveFib.
 
-// Time: O(fib(n))
+// Time: O(2^n)
 // Space: O(n) because of the call stack
 int fib(int n)
 {
@@ -22,8 +22,10 @@ int fib(int n)
    }
 }
 
-// Time: O(fib(n)) but TODO: analyze the time complexity
-// Space: O(n) because of the call stack
+// Time: O(2^(n-1))
+// Space: O(n) because of the call stack but, is 50% less than fib
+// And the more balanced the tree is, the more efficient this
+// solution is when run in parallel.
 int fibSkip(int n)
 {
    int firstFew[] = {0, 1, 1};
