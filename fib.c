@@ -22,7 +22,7 @@ int fib(int n)
    }
 }
 
-// Time: O(2^(n-1))
+// Time: O(2^(n/2))
 // Space: O(n) because of the call stack but, is 50% less than fib
 // And the more balanced the tree is, the more efficient this
 // solution is when run in parallel.
